@@ -1,0 +1,17 @@
+
+h1, h2 {
+	font-family: Helvetica;
+	text-align: center;
+	color: #96CAA0;
+}
+
+h1 {
+	margin: 0px;
+	font-size: 4vw;
+	margin-top: 5vh;
+}
+
+h2 {
+	margin: 0px;
+	font-size: 2vw;
+}
