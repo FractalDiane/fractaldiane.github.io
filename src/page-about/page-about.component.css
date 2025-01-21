@@ -2,29 +2,28 @@
 	display: grid;
 	grid-template-columns: 0.5fr 1fr;
 
-	@media (max-width: 1100px) {
+	@media screen and (orientation: portrait) {
 		display: block;
 	}
 }
 
 .aboutText {
+	margin-left: 2vw;
 	margin-right: 2vw;
 	margin-top: 2vw;
+	padding-bottom: 0.5vw;
 	text-align: center;
 
-	@media (max-width: 1100px) {
-		margin-left: 2vw;
+	@media screen and (orientation: portrait) {
+		margin-left: 5vw;
+		margin-right: 5vw;
 	}
 }
 
 .photoContact {
 	margin-top: 2vw;
 	margin-left: 2vw;
-	
-}
-
-.photoContact p, .photoContact .text {
-	font-size: large;
+	font-size: 0.8rem;
 	text-align: center;
 }
 
@@ -33,18 +32,21 @@
 }
 
 .photo > img {
-	width: 20vw;
+	width: 450px;
+	@media screen and (orientation: portrait) {
+		width: 35vw;
+	}
 }
 
 .icons {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	height: 5vw;
+	height: 80px;
 
 	margin-left: 25%;
 	margin-right: 25%;
-	@media (max-width: 1100px) {
+	@media screen and (orientation: portrait) {
 		margin-left: 50%;
 		margin-right: 50%;
 	}

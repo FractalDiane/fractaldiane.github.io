@@ -1,9 +1,13 @@
-body {
-	background-color: #243427;
+html {
+	font-size: 26px;
+	@media screen and (orientation: portrait) {
+		font-size: 20px;
+	}
 }
 
-p, .text {
+body {
+	background-color: #243427;
 	font-family: Helvetica;
 	color: white;
-	font-size: x-large;
+	
 }
