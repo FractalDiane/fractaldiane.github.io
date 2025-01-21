@@ -14,6 +14,7 @@ enum Tab {
     template: `
 		<h1>DIANE SPARKS</h1>
 		<h2>Game developer, programmer, writer, composer</h2>
+		<h2>[UNDER CONSTRUCTION]</h2>
 		<div class="mainPage">
 			<top-menu [items]="['About', 'Games', 'Programming', 'Music']" (selectionChanged)="topMenuSelectionChanged($event)" />
 
