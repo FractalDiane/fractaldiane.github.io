@@ -1,8 +1,5 @@
 .topMenu {
-	margin-top: 5vh;
-	margin-left: 5vw;
-	margin-right: 5vw;
-	height: 7.5vh;
+	height: 4vw;
 
 	display: flex;
 	flex-flow: row;
@@ -13,14 +10,32 @@
 
 	text-align: center;
 	font-family: Helvetica;
-	font-size: 1vw;
+	font-size: 1.35vw;
 	font-weight: bold;
 
-	color: white;
 	background-color: #318947;
+	color: white;
 	border: 0px;
+	border-bottom: 0.35vw solid #96CAA000;
+	cursor: pointer;
+}
+
+.topMenu > .entry:first-child {
+	border-top-left-radius: 20px;
+}
+
+.topMenu > .entry:last-child {
+	border-top-right-radius: 20px;
+}
+
+.topMenu > .entry > .entryText {
+	padding-top: 0.35vw;
 }
 
 .topMenu > .entry:hover {
 	background-color: #65b078;
+}
+
+.topMenu > .entry.selected {
+	border-bottom: 0.35vw solid #96CAA0;
 }
