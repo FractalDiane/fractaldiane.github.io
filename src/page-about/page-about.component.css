@@ -1,10 +1,6 @@
 .aboutContainer {
 	display: grid;
 	grid-template-columns: 0.5fr 1fr;
-
-	@media screen and (orientation: portrait) {
-		display: block;
-	}
 }
 
 .aboutText {
@@ -13,11 +9,6 @@
 	margin-top: 2vw;
 	padding-bottom: 0.5vw;
 	text-align: center;
-
-	@media screen and (orientation: portrait) {
-		margin-left: 5vw;
-		margin-right: 5vw;
-	}
 }
 
 .photoContact {
@@ -33,9 +24,6 @@
 
 .photo > img {
 	width: 450px;
-	@media screen and (orientation: portrait) {
-		width: 35vw;
-	}
 }
 
 .icons {
@@ -46,10 +34,6 @@
 
 	margin-left: 25%;
 	margin-right: 25%;
-	@media screen and (orientation: portrait) {
-		margin-left: 50%;
-		margin-right: 50%;
-	}
 }
 
 .icons > a {
@@ -62,4 +46,25 @@
 
 .icons > a > img {
 	height: 50%;
+}
+
+@media screen and (max-width: 800px) {
+	.aboutContainer {
+		display: block;
+	}
+
+	.aboutText {
+		margin-left: 5vw;
+		margin-right: 5vw;
+	}
+
+	.photo > img {
+		width: 35vw;
+	}
+
+	.icons {
+		height: 65px;
+		margin-left: 50%;
+		margin-right: 50%;
+	}
 }

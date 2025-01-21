@@ -1,6 +1,6 @@
 html {
 	font-size: 26px;
-	@media screen and (orientation: portrait) {
+	@media screen and (max-width: 800px) {
 		font-size: 20px;
 	}
 }
@@ -9,5 +9,4 @@ body {
 	background-color: #243427;
 	font-family: Helvetica;
 	color: white;
-	
 }
