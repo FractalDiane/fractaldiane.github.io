@@ -14,7 +14,7 @@
 .photoContact {
 	margin-top: 2vw;
 	margin-left: 2vw;
-	font-size: 0.8rem;
+	font-size: 0.9rem;
 	text-align: center;
 }
 
@@ -24,16 +24,19 @@
 
 .photo > img {
 	width: 450px;
+	user-select: none;
+	pointer-events: none;
 }
 
 .icons {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	height: 80px;
+	height: 40px;
 
 	margin-left: 25%;
 	margin-right: 25%;
+	margin-bottom: 5%;
 }
 
 .icons > a {
@@ -45,12 +48,16 @@
 }
 
 .icons > a > img {
-	height: 50%;
+	height: 100%;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 900px) {
 	.aboutContainer {
 		display: block;
+	}
+
+	.photoContact {
+		font-size: 1rem;
 	}
 
 	.aboutText {
@@ -59,11 +66,11 @@
 	}
 
 	.photo > img {
-		width: 35vw;
+		width: 40vw;
 	}
 
 	.icons {
-		height: 65px;
+		height: 32px;
 		margin-left: 50%;
 		margin-right: 50%;
 	}

@@ -1,5 +1,6 @@
 .topMenu {
-	height: 4vw;
+	--height: 80px;
+	height: var(--height);
 
 	display: flex;
 	flex-flow: row;
@@ -10,13 +11,14 @@
 
 	text-align: center;
 	font-family: Helvetica;
-	font-size: 1.35vw;
+	/*font-size: 1.35vw;*/
+	font-size: 1rem;
 	font-weight: bold;
 
 	background-color: #318947;
 	color: white;
 	border: 0px;
-	border-bottom: 0.35vw solid #96CAA000;
+	border-bottom: calc(var(--height) * 0.1) solid #96CAA000;
 	cursor: pointer;
 }
 
@@ -29,7 +31,7 @@
 }
 
 .topMenu > .entry > .entryText {
-	padding-top: 0.35vw;
+	padding-top: calc(var(--height) * 0.1);
 }
 
 .topMenu > .entry:hover {
@@ -37,5 +39,35 @@
 }
 
 .topMenu > .entry.selected {
-	border-bottom: 0.35vw solid #96CAA0;
+	border-bottom: calc(var(--height) * 0.1) solid #96CAA0;
+}
+
+@media screen and (max-width: 900px) {
+	.topMenu {
+		--height: 60px;
+	}
+
+	.topMenu > .entry {
+		font-size: 0.9rem;
+	}
+}
+
+@media screen and (max-width: 500px) {
+	.topMenu {
+		--height: 40px;
+	}
+
+	.topMenu > .entry {
+		font-size: 0.6rem;
+	}
+}
+
+@media screen and (max-width: 350px) {
+	.topMenu {
+		--height: 30px;
+	}
+
+	.topMenu > .entry {
+		font-size: 3vw;
+	}
 }
